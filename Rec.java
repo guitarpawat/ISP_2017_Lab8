@@ -25,7 +25,7 @@ public class Rec {
 		Example: removeChar("abeabe", 'e') = "abab". */
 	public static String removeChar(String s, char to_remove_char) {
         if( s.isEmpty() ) return "";
-        if( s.charAt(0) == to_remove_char ) return remove(s.substring(1), to_remove_char);
+        if( s.charAt(0) == to_remove_char ) return removeChar(s.substring(1), to_remove_char);
         return s.charAt(0) + removeChar(s.substring(1) , to_remove_char);
 	}
 
