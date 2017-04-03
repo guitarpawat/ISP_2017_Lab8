@@ -17,8 +17,15 @@ public class Rec {
       sumDigits(345) = 12.
       Precondition: n >= 0. */
     public static int sumDigits(int n) {
-	
-	// fill me in
+    	int result = 0;
+    	if(n >= 10){
+    		result = (n%10)+sumDigits(n/10);
+    		
+    	}
+    	if(n<10 && n>=0){
+    		result+=n;
+    	}
+    	return result;
 	
     }
 	
