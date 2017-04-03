@@ -7,8 +7,9 @@ public class Rec {
 		Precondition: n >= 0. */
     public static int numDigits(int n) {
 	
-	// fill me in
-	
+    	String nString = "" + n;
+    	return nString.length();
+    	
     }
 
     /** = sum of the digits in the decimal representation of n.
